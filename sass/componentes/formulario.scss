@@ -1,0 +1,23 @@
+.formulario-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    .grupo-formulario {
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+    }
+
+    input, textarea {
+        padding: 0.75rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-family: $fonte-primaria;
+        font-size: 1rem;
+    }
+}

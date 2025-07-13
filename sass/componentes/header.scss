@@ -1,0 +1,30 @@
+header {
+    background-color: $cor-branca;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo-link {
+        display: block;
+    }
+
+    .logo-img {
+        height: 45px;
+        width: auto;
+        display: block;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 1.5rem;
+
+        li a {
+            font-weight: 600;
+            transition: color 0.3s ease;
+            &:hover { color: darken($cor-primaria, 10%); }
+        }
+    }
+}

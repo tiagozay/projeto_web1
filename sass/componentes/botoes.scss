@@ -1,0 +1,15 @@
+.btn {
+    display: inline-block;
+    background-color: $cor-primaria;
+    color: $cor-branca;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: darken($cor-primaria, 10%);
+        text-decoration: none;
+    }
+}

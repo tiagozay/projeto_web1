@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:wght@400&display=swap');
+
+body {
+    font-family: $fonte-primaria;
+    font-size: $tamanho-base;
+    line-height: $altura-linha-base;
+    color: $cor-texto;
+    background-color: $cor-fundo;
+    font-weight: 400;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $fonte-secundaria;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+h1 { font-size: $tamanho-h1; }
+h2 { font-size: $tamanho-h2; }
+h3 { font-size: $tamanho-h3; }
+
+p {
+    font-size: $tamanho-p;
+    margin-bottom: 1rem;
+}
+
+a {
+    color: $cor-primaria;
+    text-decoration: none;
+    &:hover { text-decoration: underline; }
+}

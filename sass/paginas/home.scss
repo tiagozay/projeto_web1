@@ -1,0 +1,133 @@
+.hero {
+    position: relative;
+    color: $cor-branca;
+    text-align: center;
+    padding: 8rem 2rem;
+    background-image: url('../imagens/banner-home.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .container {
+        position: relative;
+        z-index: 2;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background-color: rgba(0, 0, 0, 0.4);
+        z-index: 1;
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+    }
+
+    h1, p { text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5); }
+    h1 { margin-bottom: 1rem; }
+    p { max-width: 600px; margin-left: auto; margin-right: auto; margin-bottom: 2rem; }
+}
+
+.secao-sobre {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 3rem;
+    padding: 4rem 2rem;
+
+    .sobre-imagem img {
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.secao-diferenciais {
+    background-color: lighten($cor-fundo, 2%);
+    padding: 4rem 0;
+    text-align: center;
+
+    h2 { margin-bottom: 3rem; }
+}
+
+.grid-diferenciais {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.card-diferencial {
+    padding: 2rem;
+    
+    svg {
+        width: 48px;
+        height: 48px;
+        stroke: $cor-primaria;
+        margin-bottom: 1.5rem;
+    }
+}
+
+.secao-depoimentos {
+    padding: 4rem 2rem;
+    text-align: center;
+
+    h2 { margin-bottom: 3rem; }
+}
+
+.grid-depoimentos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.card-depoimento {
+    background-color: $cor-branca;
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    
+    blockquote {
+        border: none;
+        padding: 0;
+        margin: 0 0 1.5rem 0;
+        font-style: italic;
+        font-family: $fonte-secundaria;
+        font-size: 1.15rem;
+        line-height: 1.6;
+    }
+    
+    cite {
+        font-weight: 600;
+        color: $cor-primaria;
+    }
+}
+
+.secao-cta {
+    background-color: $cor-primaria;
+    color: $cor-branca;
+    text-align: center;
+    padding: 4rem 2rem;
+
+    h2 { font-size: 2.2rem; margin-bottom: 1rem; }
+    p { max-width: 500px; margin: 0 auto 2rem auto; opacity: 0.9; }
+}
+
+.btn.btn-light {
+    background-color: $cor-branca;
+    color: $cor-primaria;
+
+    &:hover {
+        background-color: darken($cor-branca, 10%);
+    }
+}

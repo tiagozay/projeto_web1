@@ -1,0 +1,78 @@
+@import 'base/reset';
+@import 'base/variaveis';
+@import 'base/tipografia';
+
+
+@import 'componentes/header';
+@import 'componentes/footer';
+@import 'componentes/botoes';
+@import 'componentes/formulario';
+@import 'componentes/titulo';
+
+
+@import 'paginas/home';
+@import 'paginas/servicos';
+@import 'paginas/equipe';
+@import 'paginas/contato';
+
+
+.container {
+    max-width: 90%;
+    min-width: 80%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 1.5rem;
+    }
+
+
+    header {
+        padding: 1rem;
+        flex-direction: column;
+        align-items: flex-start;
+
+
+        nav {
+            margin-top: 1rem;
+            width: 100%;
+        }
+
+
+        nav ul {
+            flex-direction: column;
+            gap: 1rem;
+            align-items: center;
+        }
+    }
+
+
+    .container-contato {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 4rem 1rem;
+        h1 {
+            font-size: 2rem;
+        }
+        p {
+            font-size: 1rem;
+        }
+    }
+
+
+    .grid-equipe {
+        grid-template-columns: 1fr;
+    }
+
+
+    .item-servico {
+        padding: 1.5rem;
+    }
+}

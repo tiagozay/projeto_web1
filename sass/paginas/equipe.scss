@@ -1,0 +1,46 @@
+.grid-equipe {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+.membro-equipe {
+    background-color: $cor-branca;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    text-align: center;
+    padding: 2.5rem 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    }
+
+    img {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 1.5rem;
+        border: 4px solid $cor-fundo;
+    }
+
+    h3 {
+        margin-bottom: 0.5rem;
+        color: $cor-primaria;
+        font-size: 1.5rem;
+    }
+
+    p {
+        color: $cor-secundaria;
+        font-family: $fonte-primaria;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+}

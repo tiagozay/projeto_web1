@@ -1,0 +1,30 @@
+.secao-titulo {
+    text-align: center;
+    margin-bottom: 4rem;
+
+    h2 {
+        display: inline-block;
+        position: relative;
+        font-family: $fonte-secundaria;
+        font-size: 2.4rem;
+        font-weight: 700;
+        color: $cor-texto;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        padding-bottom: 1rem;
+        margin-bottom: 0;
+    }
+
+    h2::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        
+        width: 70px;
+        height: 3px;
+        background-color: $cor-primaria;
+        border-radius: 2px;
+    }
+}
